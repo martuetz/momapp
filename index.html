@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum - Scale Your Business to 7 Figures</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=STIX+Two+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Inter"', 'sans-serif'], // Replacement for Geist
+              serif: ['"STIX Two Text"', 'serif'], // Secondary font for quotes
+            },
+            colors: {
+              brand: {
+                red: '#CC0000', // Official Sigrun Red
+                black: '#131313', // Matte Black
+                light: '#F2F3F4', // Light Grey Background
+                charcoal: '#7A7C82', // Charcoal Grey (Accents)
+                grey: '#BDBEC1', // Grey (Small elements)
+                white: '#FFFFFF'
+              }
+            },
+            letterSpacing: {
+              tight: '-0.02em',
+              normal: '0em',
+              wide: '0.02em',
+            },
+            borderRadius: {
+              'brand': '9999px', // Rounded buttons
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        color: #131313;
+        background-color: #FFFFFF;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Inter', sans-serif;
+        letter-spacing: -0.02em; 
+      }
+      .font-quote {
+        font-family: 'STIX Two Text', serif;
+      }
+      .btn-sigrun {
+        border-radius: 9999px; /* Rounded buttons per Page 10 */
+        font-weight: 600;
+        font-family: 'Inter', sans-serif;
+        text-transform: uppercase;
+        font-size: 0.875rem;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+      .btn-sigrun:hover {
+        background-color: #131313; /* Mouseover in Black per Page 6 */
+        color: #FFFFFF;
+        border-color: #131313;
+      }
+      /* Custom pulse animation for the voice agent */
+      @keyframes audio-pulse {
+        0% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.1); opacity: 0.8; }
+        100% { transform: scale(1); opacity: 1; }
+      }
+      .animate-audio-pulse {
+        animation: audio-pulse 2s infinite ease-in-out;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

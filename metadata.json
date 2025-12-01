@@ -1,0 +1,7 @@
+{
+  "name": "Momentum AI - Program Assistant",
+  "description": "A recreation of a high-end mentorship program landing page featuring a real-time voice AI assistant for program inquiries.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
